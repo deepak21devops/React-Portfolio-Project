@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import woman from '../images/woman.jpg'
+import woman from '../images/intro.png'
 
 const Container = styled.div`
 height: calc(100vh - 0px);
@@ -47,6 +47,7 @@ color: white;
 border:none;
 border-radius: 10px;
 font-weight: bold;
+cursor: pointer;
 `
 
 const Contact = styled.div`
@@ -69,10 +70,11 @@ const Right = styled.div`
 display: flex;
 justify-content: center;
 width: 40%;
+align-items: center;
 `
 
 const Image = styled.img`
-width:120%
+width:100%
 `
 
 const Intro = () => {

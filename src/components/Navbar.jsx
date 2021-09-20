@@ -67,7 +67,7 @@ const Navbar = () => {
                     </Menu>
                 </Logo>
                 <Button>
-                    Button
+                    JOIN TODAY
                 </Button>
             </Wrapper>
 
