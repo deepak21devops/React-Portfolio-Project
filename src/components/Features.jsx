@@ -20,6 +20,8 @@ justify-content: center;
 
 const Image = styled.img`
 width: 90%;
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
 `
 
 const Right = styled.div`
@@ -57,7 +59,8 @@ font-size: 15px;
 cursor: pointer;
 margin-left:-480px;
 display: flex;
-border:none
+border:none;
+margin-top: 10px;
 `
 
 const Features = () => {
