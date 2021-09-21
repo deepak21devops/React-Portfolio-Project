@@ -17,7 +17,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 font-size: 30px;
-
+cursor: pointer;
 `
 
 const Menu = styled.ul`
@@ -32,6 +32,7 @@ font-size: 25px;
 list-style-type: none;
 color:gray;
 align-items: center;
+cursor: pointer;
 `
 const LogoImg = styled.div`
 text-decoration: underline crimson;
@@ -55,7 +56,7 @@ const Navbar = () => {
             <Wrapper>
                 <Logo>
                     <LogoImg>
-                        Agency
+                        BAKKI ENTERPISES
                     </LogoImg>
 
                     <Menu>

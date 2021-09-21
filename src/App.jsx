@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import ContactPage from './components/ContactPage'
 import Features from './components/Features'
 import Intro from './components/Intro'
 import Navbar from './components/Navbar'
@@ -9,7 +10,7 @@ import Services from './components/Services'
 
 const Container = styled.div`
 font-family:"JoseRegular";
-height: 114vh;
+height: 100vh;
 overflow: hidden;
 position: relative;
 `
@@ -71,6 +72,10 @@ const App = () => {
       <Container>
         <Prices />
         <PriceClip />
+      </Container>
+
+      <Container>
+        <ContactPage />
       </Container>
 
 
