@@ -6,6 +6,10 @@ height: 90%;
 background-color: black;
 overflow:hidden;
 padding:20px;
+@media screen and (max-width:480px){
+    padding:10px;
+    height: 100px;
+}
 `
 
 const Wrapper = styled.div`
@@ -13,6 +17,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 /* padding:0 20px; */
+
 `
 
 const Menu = styled.ul`
@@ -25,10 +30,16 @@ const MenuItems = styled.li`
 list-style-type: none;
 margin-right: 10px;
 color:white;
+@media screen and (max-width:480px){
+    font-size: 10px;
+}
 `
 
 const Author = styled.p`
 color:white;
+@media screen and (max-width:480px){
+    font-size: 10px;
+}
 `
 
 const Footer = () => {

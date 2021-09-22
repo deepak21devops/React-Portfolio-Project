@@ -10,9 +10,32 @@ import Services from './components/Services'
 
 const Container = styled.div`
 font-family:"JoseRegular";
-height: 100vh;
+height: 120vh;
 overflow: hidden;
 position: relative;
+@media screen and (max-width:480px){
+  height: 160vh;
+}
+`
+
+const ContainerOne = styled.div`
+font-family:"JoseRegular";
+height: 90vh;
+overflow: hidden;
+position: relative;
+@media screen and (max-width:480px){
+  /* height: 160vh; */
+}
+`
+
+const ContainerTwo = styled.div`
+font-family:"JoseRegular";
+height: 120vh;
+overflow: hidden;
+position: relative;
+@media screen and (max-width:480px){
+  /* height: 160vh; */
+}
 `
 
 const Shape = css`
@@ -53,21 +76,21 @@ background-color:crimson
 const App = () => {
   return (
     <>
-      <Container>
+      <ContainerOne>
         <Navbar />
         <Intro />
         <IntroClip />
-      </Container>
+      </ContainerOne>
 
-      <Container>
+      <ContainerOne>
         <Features />
         <FeatureClip />
-      </Container>
+      </ContainerOne>
 
-      <Container>
+      <ContainerTwo>
         <Services />
         <ServiceClip />
-      </Container>
+      </ContainerTwo>
 
       <Container>
         <Prices />

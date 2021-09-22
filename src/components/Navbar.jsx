@@ -10,6 +10,12 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 font-size: 20px;
+
+@media only screen and (max-width:480px){
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 `
 const Logo = styled.h1`
 width: 60%;
@@ -18,13 +24,20 @@ justify-content: space-between;
 align-items: center;
 font-size: 30px;
 cursor: pointer;
+@media only screen and (max-width:480px){
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 `
 
 const Menu = styled.ul`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
+@media only screen and (max-width:480px){
+display: none;
+}
 `
 const MenuItems = styled.li`
 margin-right: 20px;
@@ -56,7 +69,7 @@ const Navbar = () => {
             <Wrapper>
                 <Logo>
                     <LogoImg>
-                        BAKKI ENTERPISES
+                        MILLINIEAL'S <br></br>CLUB
                     </LogoImg>
 
                     <Menu>

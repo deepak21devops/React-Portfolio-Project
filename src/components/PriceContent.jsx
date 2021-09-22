@@ -4,6 +4,12 @@ import styled from 'styled-components'
 const Container = styled.div`
 height: 100%;
 margin-top: 70px;
+
+@media screen and (max-width:480px){
+  display:flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 `
 const Wrapper = styled.div`
 display: flex;
@@ -16,6 +22,12 @@ border-radius: 10px;
 box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+@media screen and (max-width:480px){
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 200px;
+}
 `
 
 const PriceTag = styled.div`
@@ -24,6 +36,9 @@ const PriceTag = styled.div`
 const Price = styled.span`
 font-size: 60px;
 font-weight: bold;
+@media screen and (max-width:480px){
+    font-size: 30px;
+}
 `
 const Button = styled.button`
 border:2px solid crimson;
@@ -33,6 +48,10 @@ margin-top: 20px;
 color: crimson;
 cursor: pointer;
 font-weight: bold;
+
+@media screen and (max-width:480px){
+    padding:5px 10px;
+}
 `
 
 const Menu = styled.ul`
@@ -42,6 +61,10 @@ list-style-type: none;
 const MenuItems = styled.li`
 line-height: 40px;
 font-size: 20px;
+@media screen and (max-width:480px){
+    font-size: 15px;
+    line-height: 20px;
+}
 `
 
 const JoinBtn = styled.button`
@@ -52,6 +75,12 @@ border-radius: 15px;
 font-weight: bold;
 border:none;
 cursor: pointer;
+@media screen and (max-width:480px){
+    width: 100px;
+    height: 100px;
+    padding:10px 10px;
+    font-size: 12px;
+}
 `
 
 

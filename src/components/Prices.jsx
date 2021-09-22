@@ -7,6 +7,14 @@ display: flex;
 justify-content: space-around;
 margin-top: 50px;
 height: 100vh;
+
+@media screen and (max-width:480px){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 1000px;
+    margin-top: 20px;
+}
 `
 
 const Prices = () => {

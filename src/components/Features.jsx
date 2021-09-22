@@ -4,18 +4,27 @@ import girl from '../images/angel.png'
 const Container = styled.div`
 
 margin-top: 80px;
+
 `
 const Wrapper = styled.div`
 display: flex;
 
 justify-content: center;
 align-items: center;
+@media only screen and (max-width:480px){
+
+margin-bottom: -20px;
+
+}
 `
 
 const Left = styled.div`
 width: 50%;
 display: flex;
 justify-content: center;
+@media only screen and (max-width:480px){
+    display: none;
+}
 `
 
 const Image = styled.img`
@@ -30,23 +39,51 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 width: 50%;
+@media only screen and (max-width:480px){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 `
 const Title = styled.span`
 width: 90%;
 font-size: 60px;
 margin-bottom: 20px;
+@media only screen and (max-width:480px){
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+   line-height: 10px;
+}
 `
 
 const SubTitle = styled.span`
 width: 90%;
 font-style: italic;
 font-size: 30px;
+@media only screen and (max-width:480px){
+
+    font-size: 15px;
+    display: flex;
+   justify-content: center;
+    
+}
 `
 
 const Desc = styled.p`
 font-size: 15px;
 line-height: 20px;
 width: 90%;
+@media only screen and (max-width:480px){
+
+
+padding:10px 15px;
+font-size: 15px;
+
+}
 `
 
 const Button = styled.button`
