@@ -98,6 +98,13 @@ margin-left:-480px;
 display: flex;
 border:none;
 margin-top: 10px;
+@media only screen and (max-width:480px){
+
+/* display: flex;
+justify-content: center; */
+margin-left:0px;
+
+}
 `
 
 const Features = () => {
